@@ -24,5 +24,20 @@ namespace View
         {
             InitializeComponent();
         }
+
+        private void ConvertToCelsius(object sender, RoutedEventArgs e)
+        {
+            double userIput = Double.Parse(textBoxFahrenheit.Text);
+            double celsius = (userIput - 32) / 1.8;
+            textBoxCelsius.Text = celsius.ToString();
+
+        }
+
+        private void ConvertToFahrenheit(object sender, RoutedEventArgs e)
+        {
+            double userIput = Double.Parse(textBoxCelsius.Text);
+            double celsius = userIput * 1.8 +32;
+            textBoxFahrenheit.Text = celsius.ToString();
+        }
     }
 }

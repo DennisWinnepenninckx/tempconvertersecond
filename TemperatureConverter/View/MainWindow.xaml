@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBox x:Name="textBoxFahrenheit" />
+        <Button Content="Convert to Celsius" Click="ConvertToCelsius"/>
+        <TextBox x:Name="textBoxCelsius" />
+        <Button Content="Convert to Fahreneheit" Click="ConvertToFahrenheit"/>
+    </StackPanel>
 </Window>
